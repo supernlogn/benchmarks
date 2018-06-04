@@ -34,7 +34,8 @@ References:
 import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
-import model as model_lib
+import datasets
+from models import model as model_lib
 
 
 def bottleneck_block_v1(cnn, depth, depth_bottleneck, stride):
@@ -196,7 +197,7 @@ class ResnetModel(model_lib.Model):
         'resnet152_v2': 32,
     }
     batch_size = default_batch_sizes.get(model, 32)
-    super(ResnetModel, self).__init__(model, 224, batch_size, 0.005,
+    super(ResnetModel, self).__init__(model, 224, batch_size, 0.004,
                                       layer_counts)
     self.pre_activation = 'v2' in model
 
@@ -204,9 +205,9 @@ class ResnetModel(model_lib.Model):
     if self.layer_counts is None:
       raise ValueError('Layer counts not specified for %s' % self.get_model())
     cnn.use_batch_norm = True
-    cnn.batch_norm_config = {'decay': 0.997, 'epsilon': 1e-5, 'scale': True}
+    cnn.batch_norm_config = {'decay': 0.9, 'epsilon': 1e-5, 'scale': True}
     cnn.conv(64, 7, 7, 2, 2, mode='SAME_RESNET', use_batch_norm=True)
-    cnn.mpool(3, 3, 2, 2)
+    cnn.mpool(3, 3, 2, 2, mode='SAME')
     for _ in xrange(self.layer_counts[0]):
       bottleneck_block(cnn, 256, 64, 1, self.pre_activation)
     for i in xrange(self.layer_counts[1]):
@@ -222,6 +223,44 @@ class ResnetModel(model_lib.Model):
       cnn.batch_norm()
       cnn.top_layer = tf.nn.relu(cnn.top_layer)
     cnn.spatial_mean()
+
+  def get_learning_rate(self, global_step, batch_size):
+    num_batches_per_epoch = (
+        float(datasets.IMAGENET_NUM_TRAIN_IMAGES) / batch_size)
+    boundaries = [int(num_batches_per_epoch * x) for x in [30, 60, 80, 90]]
+    rescaled_lr = self.learning_rate / self.default_batch_size * batch_size
+    values = [1, 0.1, 0.01, 0.001, 0.0001]
+    values = [rescaled_lr * v for v in values]
+    lr = tf.train.piecewise_constant(global_step, boundaries, values)
+    warmup_steps = int(num_batches_per_epoch * 5)
+    warmup_lr = (
+        rescaled_lr * tf.cast(global_step, tf.float32) / tf.cast(
+            warmup_steps, tf.float32))
+    return tf.cond(global_step < warmup_steps, lambda: warmup_lr, lambda: lr)
+
+
+def create_resnet50_model():
+  return ResnetModel('resnet50', (3, 4, 6, 3))
+
+
+def create_resnet50_v2_model():
+  return ResnetModel('resnet50_v2', (3, 4, 6, 3))
+
+
+def create_resnet101_model():
+  return ResnetModel('resnet101', (3, 4, 23, 3))
+
+
+def create_resnet101_v2_model():
+  return ResnetModel('resnet101_v2', (3, 4, 23, 3))
+
+
+def create_resnet152_model():
+  return ResnetModel('resnet152', (3, 8, 36, 3))
+
+
+def create_resnet152_v2_model():
+  return ResnetModel('resnet152_v2', (3, 8, 36, 3))
 
 
 class ResnetCifar10Model(model_lib.Model):
@@ -266,12 +305,50 @@ class ResnetCifar10Model(model_lib.Model):
       cnn.top_layer = tf.nn.relu(cnn.top_layer)
     cnn.spatial_mean()
 
-  def get_learning_rate(self, global_step=None, batch_size=None):
-    if global_step is None or batch_size is None:
-      return self.learning_rate
+  def get_learning_rate(self, global_step, batch_size):
     num_batches_per_epoch = int(50000 / batch_size)
     boundaries = num_batches_per_epoch * np.array([82, 123, 300],
                                                   dtype=np.int64)
     boundaries = [x for x in boundaries]
     values = [0.1, 0.01, 0.001, 0.0002]
     return tf.train.piecewise_constant(global_step, boundaries, values)
+
+
+def create_resnet20_cifar_model():
+  return ResnetCifar10Model('resnet20', (3, 3, 3))
+
+
+def create_resnet20_v2_cifar_model():
+  return ResnetCifar10Model('resnet20_v2', (3, 3, 3))
+
+
+def create_resnet32_cifar_model():
+  return ResnetCifar10Model('resnet32_v2', (5, 5, 5))
+
+
+def create_resnet32_v2_cifar_model():
+  return ResnetCifar10Model('resnet32_v2', (5, 5, 5))
+
+
+def create_resnet44_cifar_model():
+  return ResnetCifar10Model('resnet44', (7, 7, 7))
+
+
+def create_resnet44_v2_cifar_model():
+  return ResnetCifar10Model('resnet44_v2', (7, 7, 7))
+
+
+def create_resnet56_cifar_model():
+  return ResnetCifar10Model('resnet56', (9, 9, 9))
+
+
+def create_resnet56_v2_cifar_model():
+  return ResnetCifar10Model('resnet56_v2', (9, 9, 9))
+
+
+def create_resnet110_cifar_model():
+  return ResnetCifar10Model('resnet110', (18, 18, 18))
+
+
+def create_resnet110_v2_cifar_model():
+  return ResnetCifar10Model('resnet110_v2', (18, 18, 18))

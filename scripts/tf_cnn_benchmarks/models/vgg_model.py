@@ -52,7 +52,6 @@ def _construct_vgg(cnn, num_conv_layers):
   cnn.affine(4096)
   cnn.dropout()
 
-
 class Vgg11Model(model.Model):
 
   def __init__(self):

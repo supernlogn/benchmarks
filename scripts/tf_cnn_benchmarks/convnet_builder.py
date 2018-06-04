@@ -48,6 +48,7 @@ class ConvNetBuilder(object):
     self.dtype = dtype
     self.variable_dtype = variable_dtype
     self.counts = defaultdict(lambda: 0)
+    self.n_parameters = 0
     self.use_batch_norm = False
     self.batch_norm_config = {}  # 'decay': 0.997, 'scale': True}
     self.channel_pos = ('channels_last'
@@ -152,17 +153,34 @@ class ConvNetBuilder(object):
            use_batch_norm=None,
            stddev=None,
            activation='relu',
-           bias=0.0):
-    """Construct a conv2d layer on top of cnn."""
+           bias=0.0,
+           kernel_initializer=None):
+    """Construct a conv2d layer on top of cnn.
+    
+      Args:
+        num_out_channels: number of output channels. If not specified they are the same as the networks top layer.
+        k_height: kernel height.
+        k_width: kernel width.
+        d_height: stride height.
+        d_width: stride width.
+        mode: see tensorflow convolution modes (SAME = the output has the same dimensions as the input).
+        input_layer: the input layer of the convolution. If not specified the network's top layer is used.
+        num_channels_in: The number of input layer's channels. If not specified the network's top layer number of channels is used.
+        use_batch_norm: whether the norm will be based on a batch of inputs or on individual inputs.
+        stddev: The weights of the convolution filter are specified by a truncated normal distribution with standar deviation stddev.
+        activation: string defining the activation after convolving. Possible values are:
+                  relu, linear, tanh
+        bias: specify a value to be added to all channels after the convolving part.
+    """
     if input_layer is None:
       input_layer = self.top_layer
     if num_channels_in is None:
       num_channels_in = self.top_size
-    kernel_initializer = None
-    if stddev is not None:
+    if stddev is not None and kernel_initializer is None:
       kernel_initializer = tf.truncated_normal_initializer(stddev=stddev)
     name = 'conv' + str(self.counts['conv'])
     self.counts['conv'] += 1
+    self.n_parameters += k_height * k_width * ( num_out_channels - int(num_channels_in) + 1)
     with tf.variable_scope(name):
       strides = [1, d_height, d_width, 1]
       if self.data_format == 'NCHW':
@@ -255,6 +273,7 @@ class ConvNetBuilder(object):
       pool = tf.nn.max_pool(input_layer, ksize, strides, padding=mode,
                             data_format=self.data_format, name=name)
     self.top_layer = pool
+    self.n_parameters += k_height * k_width
     return pool
 
   def mpool(self,
@@ -286,7 +305,10 @@ class ConvNetBuilder(object):
     if input_layer is None:
       input_layer = self.top_layer
     self.top_layer = tf.reshape(input_layer, shape)
-    self.top_size = shape[-1]  # HACK This may not always work
+    if self.data_format == 'NHWC':
+      self.top_size = shape[-1]
+    else: # 'NCHW'
+      self.top_size = shape[1]
     return self.top_layer
 
   def affine(self,
@@ -312,6 +334,8 @@ class ConvNetBuilder(object):
       biases = self.get_variable('biases', [num_out_channels],
                                  self.variable_dtype, self.dtype,
                                  initializer=tf.constant_initializer(bias))
+      self.n_parameters += num_channels_in * num_out_channels + num_out_channels                        
+
       logits = tf.nn.xw_plus_b(input_layer, kernel, biases)
       if activation == 'relu':
         affine1 = tf.nn.relu(logits, name=name)
@@ -438,11 +462,6 @@ class ConvNetBuilder(object):
     self.counts['batchnorm'] += 1
 
     with tf.variable_scope(name) as scope:
-      using_fp16 = (self.dtype == tf.float16)
-      if using_fp16:
-        # Currently fused batch norm does not support fp16, so we do a cast
-        # to fp32 here.
-        input_layer = tf.cast(input_layer, tf.float32)
       if self.use_tf_layers:
         bn = tf.contrib.layers.batch_norm(
             input_layer,
@@ -455,8 +474,6 @@ class ConvNetBuilder(object):
             scope=scope)
       else:
         bn = self._batch_norm_without_layers(input_layer, decay, scale, epsilon)
-      if using_fp16:
-        bn = tf.cast(bn, tf.float16)
     self.top_layer = bn
     self.top_size = bn.shape[3] if self.data_format == 'NHWC' else bn.shape[1]
     self.top_size = int(self.top_size)
@@ -469,3 +486,12 @@ class ConvNetBuilder(object):
     self.top_layer = tf.nn.lrn(
         self.top_layer, depth_radius, bias, alpha, beta, name=name)
     return self.top_layer
+
+  def concat_layers(self, list_of_layers=None):
+    """ Concatenates 2 or more layers. """ 
+    catdim = 3 if self.data_format == 'NHWC' else 1
+    if list_of_layers == None:
+      return # get the last 2 layers
+      # list_of_layers = [self.lay]
+    self.top_layer = tf.concat(axis = catdim, values=list_of_layers)
+    self.top_size = np.sum([layer.get_shape()[catdim] for layer in list_of_layers])

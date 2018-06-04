@@ -1,0 +1,532 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AlexnetCifar10Model	../scripts/tf_cnn_benchmarks/models/alexnet_model.py	/^class AlexnetCifar10Model(model.Model):$/;"	kind:class	line:51
+AlexnetModel	../scripts/tf_cnn_benchmarks/models/alexnet_model.py	/^class AlexnetModel(model.Model):$/;"	kind:class	line:28
+AllReduceSpecTuple	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^AllReduceSpecTuple = pycoll.namedtuple('AllReduceSpecTuple', 'alg shards limit')$/;"	kind:variable	line:467
+Barrier	../scripts/tf_cnn_benchmarks/cnn_util.py	/^class Barrier(object):$/;"	kind:class	line:46
+BenchmarkCNN	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^class BenchmarkCNN(object):$/;"	kind:class	line:635
+BenchmarkUtilTest	../scripts/util/benchmark_util_test.py	/^class BenchmarkUtilTest(unittest.TestCase):$/;"	kind:class	line:30
+CheckPodsAreTerminated	../tools/kubectl_util.py	/^  def CheckPodsAreTerminated():$/;"	kind:function	line:100
+CheckpointNotFoundException	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^class CheckpointNotFoundException(Exception):$/;"	kind:class	line:443
+Cifar10Data	../scripts/tf_cnn_benchmarks/datasets.py	/^class Cifar10Data(Dataset):$/;"	kind:class	line:144
+Cifar10ImagePreprocessor	../scripts/tf_cnn_benchmarks/preprocessing.py	/^class Cifar10ImagePreprocessor(object):$/;"	kind:class	line:541
+ClusterSpecString	../tools/k8s_tensorflow_lib.py	/^def ClusterSpecString(num_workers,$/;"	kind:function	line:268
+ConvNetBuilder	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^class ConvNetBuilder(object):$/;"	kind:class	line:32
+ConvertCsvToJsonTest	../scripts/util/convert_csv_to_json_test.py	/^class ConvertCsvToJsonTest(unittest.TestCase):$/;"	kind:class	line:23
+CreatePods	../tools/kubectl_util.py	/^def CreatePods(pod_name, yaml_file):$/;"	kind:function	line:67
+Dataset	../scripts/tf_cnn_benchmarks/datasets.py	/^class Dataset(object):$/;"	kind:class	line:62
+DeletePods	../tools/kubectl_util.py	/^def DeletePods(pod_name, yaml_file):$/;"	kind:function	line:86
+DensenetCifar10Model	../scripts/tf_cnn_benchmarks/models/densenet_model.py	/^class DensenetCifar10Model(model_lib.Model):$/;"	kind:class	line:27
+FLAGS	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^FLAGS = tf.flags.FLAGS$/;"	kind:variable	line:392
+FLAGS	../scripts/tf_cnn_benchmarks/cnn_util.py	/^FLAGS = tf.flags.FLAGS$/;"	kind:variable	line:25
+GenerateConfig	../tools/k8s_tensorflow_lib.py	/^def GenerateConfig(num_workers,$/;"	kind:function	line:134
+GetCommonArgs	../tools/k8s_tensorflow_lib.py	/^def GetCommonArgs(num_workers,$/;"	kind:function	line:288
+GlobalStepWatcher	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^class GlobalStepWatcher(threading.Thread):$/;"	kind:class	line:395
+GooglenetModel	../scripts/tf_cnn_benchmarks/models/googlenet_model.py	/^class GooglenetModel(model.Model):$/;"	kind:class	line:28
+IMAGENET_NUM_TRAIN_IMAGES	../scripts/tf_cnn_benchmarks/datasets.py	/^IMAGENET_NUM_TRAIN_IMAGES = 1281167$/;"	kind:variable	line:31
+IMAGENET_NUM_VAL_IMAGES	../scripts/tf_cnn_benchmarks/datasets.py	/^IMAGENET_NUM_VAL_IMAGES = 50000$/;"	kind:variable	line:32
+ImageProducer	../scripts/tf_cnn_benchmarks/cnn_util.py	/^class ImageProducer(object):$/;"	kind:class	line:94
+ImagenetData	../scripts/tf_cnn_benchmarks/datasets.py	/^class ImagenetData(Dataset):$/;"	kind:class	line:107
+Inceptionv3Model	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^class Inceptionv3Model(model.Model):$/;"	kind:class	line:44
+Inceptionv4Model	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^class Inceptionv4Model(model.Model):$/;"	kind:class	line:160
+K8sTensorflowTest	../tools/k8s_tensorflow_test.py	/^class K8sTensorflowTest(unittest.TestCase):$/;"	kind:class	line:26
+KubectlUtilTest	../tools/kubectl_util_test.py	/^class KubectlUtilTest(unittest.TestCase):$/;"	kind:class	line:31
+Lenet5Model	../scripts/tf_cnn_benchmarks/models/lenet_model.py	/^class Lenet5Model(model.Model):$/;"	kind:class	line:27
+LmdbInputImagePreprocessor.py	../my_tests/LmdbInputImagePreprocessor.py	1;"	kind:file	line:1
+MobileNetCifar10Model	../scripts/tf_cnn_benchmarks/models/mobilenet.py	/^class MobileNetCifar10Model(model_lib.Model):$/;"	kind:class	line:32
+MobileNetModel	../scripts/tf_cnn_benchmarks/models/mobilenet.py	/^class MobileNetModel(model_lib.Model):$/;"	kind:class	line:27
+Model	../scripts/tf_cnn_benchmarks/models/model.py	/^class Model(object):$/;"	kind:class	line:18
+OverfeatModel	../scripts/tf_cnn_benchmarks/models/overfeat_model.py	/^class OverfeatModel(model.Model):$/;"	kind:class	line:29
+OverrideCachingDevice	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class OverrideCachingDevice(object):$/;"	kind:class	line:37
+OverrideToLocalVariableIfNotPsVar	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class OverrideToLocalVariableIfNotPsVar(object):$/;"	kind:class	line:69
+PARAM_SERVER_POD	../tools/k8s_tensorflow_lib.py	/^PARAM_SERVER_POD = ($/;"	kind:variable	line:80
+PARAM_SERVER_SVC	../tools/k8s_tensorflow_lib.py	/^PARAM_SERVER_SVC = ($/;"	kind:variable	line:101
+PS_SHADOW_VAR_PREFIX	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^PS_SHADOW_VAR_PREFIX = 'ps_var'$/;"	kind:variable	line:33
+ParamServerClusterSpecString	../tools/k8s_tensorflow_lib.py	/^def ParamServerClusterSpecString(num_workers,$/;"	kind:function	line:259
+ParamServerDeviceSetter	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class ParamServerDeviceSetter(object):$/;"	kind:class	line:90
+Params	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^Params = namedtuple('Params', _DEFAULT_PARAMS.keys())  # pylint: disable=invalid-name$/;"	kind:variable	line:602
+PsHosts	../tools/k8s_tensorflow_lib.py	/^def PsHosts(num_ps, port, name_prefix):$/;"	kind:function	line:325
+RecordInputImagePreprocessor	../scripts/tf_cnn_benchmarks/preprocessing.py	/^class RecordInputImagePreprocessor(object):$/;"	kind:class	line:417
+ResnetCifar10Model	../scripts/tf_cnn_benchmarks/models/resnet_model.py	/^class ResnetCifar10Model(model_lib.Model):$/;"	kind:class	line:227
+ResnetModel	../scripts/tf_cnn_benchmarks/models/resnet_model.py	/^class ResnetModel(model_lib.Model):$/;"	kind:class	line:186
+SqueezenetCifar10Model	../scripts/tf_cnn_benchmarks/models/squeezenet_model.py	/^class SqueezenetCifar10Model(model_lib.Model):$/;"	kind:class	line:80
+SqueezenetModel	../scripts/tf_cnn_benchmarks/models/squeezenet_model.py	/^class SqueezenetModel(model_lib.Model):$/;"	kind:class	line:52
+StagedModelVariable	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class StagedModelVariable(object):$/;"	kind:class	line:279
+StagedVariableGetter	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class StagedVariableGetter(object):$/;"	kind:class	line:356
+StatEntry	../scripts/util/benchmark_util.py	/^StatEntry = namedtuple($/;"	kind:variable	line:40
+SyntheticData	../scripts/tf_cnn_benchmarks/datasets.py	/^class SyntheticData(Dataset):$/;"	kind:class	line:131
+SyntheticImagePreprocessor	../scripts/tf_cnn_benchmarks/preprocessing.py	/^class SyntheticImagePreprocessor(object):$/;"	kind:class	line:664
+TestImagePreprocessor	../scripts/tf_cnn_benchmarks/preprocessing.py	/^class TestImagePreprocessor(object):$/;"	kind:class	line:836
+TestMain	../dashboard_app/main_test.py	/^class TestMain(unittest.TestCase):$/;"	kind:class	line:21
+TimeoutError	../tools/kubectl_util.py	/^class TimeoutError(Exception):$/;"	kind:class	line:33
+TrivialModel	../scripts/tf_cnn_benchmarks/models/trivial_model.py	/^class TrivialModel(model.Model):$/;"	kind:class	line:20
+VariableMgr	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class VariableMgr(object):$/;"	kind:class	line:120
+VariableMgrDistributedAllReduce	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class VariableMgrDistributedAllReduce(VariableMgr):$/;"	kind:class	line:697
+VariableMgrDistributedFetchFromPS	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class VariableMgrDistributedFetchFromPS(VariableMgr):$/;"	kind:class	line:794
+VariableMgrDistributedFetchFromStagedPS	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^    VariableMgrDistributedFetchFromPS):$/;"	kind:class	line:833
+VariableMgrDistributedReplicated	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class VariableMgrDistributedReplicated(VariableMgr):$/;"	kind:class	line:858
+VariableMgrIndependent	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class VariableMgrIndependent(VariableMgr):$/;"	kind:class	line:221
+VariableMgrLocalFetchFromPS	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class VariableMgrLocalFetchFromPS(VariableMgr):$/;"	kind:class	line:246
+VariableMgrLocalFetchFromStagedPS	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class VariableMgrLocalFetchFromStagedPS(VariableMgrLocalFetchFromPS):$/;"	kind:class	line:439
+VariableMgrLocalReplicated	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^class VariableMgrLocalReplicated(VariableMgr):$/;"	kind:class	line:624
+Vgg11Model	../scripts/tf_cnn_benchmarks/models/vgg_model.py	/^class Vgg11Model(model.Model):$/;"	kind:class	line:55
+Vgg16Model	../scripts/tf_cnn_benchmarks/models/vgg_model.py	/^class Vgg16Model(model.Model):$/;"	kind:class	line:64
+Vgg19Model	../scripts/tf_cnn_benchmarks/models/vgg_model.py	/^class Vgg19Model(model.Model):$/;"	kind:class	line:73
+WAIT_PERIOD_SECONDS	../tools/kubectl_util.py	/^WAIT_PERIOD_SECONDS = 20$/;"	kind:variable	line:30
+WORKER_LB_SVC	../tools/k8s_tensorflow_lib.py	/^WORKER_LB_SVC = ($/;"	kind:variable	line:66
+WORKER_POD	../tools/k8s_tensorflow_lib.py	/^WORKER_POD = ($/;"	kind:variable	line:30
+WORKER_SVC	../tools/k8s_tensorflow_lib.py	/^WORKER_SVC = ($/;"	kind:variable	line:52
+WaitForCompletion	../tools/kubectl_util.py	/^def WaitForCompletion(pod_name_prefix, job_name='worker', timeout=2*60*60):$/;"	kind:function	line:114
+WorkerClusterSpecString	../tools/k8s_tensorflow_lib.py	/^def WorkerClusterSpecString(num_workers,$/;"	kind:function	line:251
+WorkerHosts	../tools/k8s_tensorflow_lib.py	/^def WorkerHosts(num_workers, port, name_prefix):$/;"	kind:function	line:319
+_ARGUMENTS_TO_EXCLUDE	../dashboard_app/main.py	/^_ARGUMENTS_TO_EXCLUDE = set($/;"	kind:variable	line:37
+_BuildAndPushDockerImage	../tools/run_distributed_benchmarks.py	/^def _BuildAndPushDockerImage($/;"	kind:function	line:66
+_ConvertToValidName	../tools/run_distributed_benchmarks.py	/^def _ConvertToValidName(name):$/;"	kind:function	line:40
+_DAYS_TO_FETCH	../dashboard_app/main.py	/^_DAYS_TO_FETCH = 90$/;"	kind:variable	line:32
+_DEFAULT_PARAMS	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^_DEFAULT_PARAMS = {$/;"	kind:variable	line:54
+_DOCKER_IMAGE_PATTERN	../tools/run_distributed_benchmarks.py	/^_DOCKER_IMAGE_PATTERN = 'gcr.io\/tensorflow-testing\/benchmarks\/%s'$/;"	kind:variable	line:34
+_ENV_VAR_TEMPLATE	../tools/k8s_tensorflow_lib.py	/^_ENV_VAR_TEMPLATE = '{name: "%s", value: "%s"}'$/;"	kind:variable	line:127
+_GPU_TEMPLATE	../tools/k8s_tensorflow_lib.py	/^_GPU_TEMPLATE = '{alpha.kubernetes.io\/nvidia-gpu: %d}'$/;"	kind:variable	line:132
+_GetJobSelector	../tools/kubectl_util.py	/^def _GetJobSelector(pod_name_prefix, job_name=None):$/;"	kind:function	line:107
+_GetMostRecentDockerImageFromGcloud	../tools/run_distributed_benchmarks.py	/^def _GetMostRecentDockerImageFromGcloud(docker_image):$/;"	kind:function	line:102
+_GetPodNames	../tools/kubectl_util.py	/^def _GetPodNames(pod_name_prefix, job_name=None):$/;"	kind:function	line:46
+_KUBECTL	../tools/kubectl_util.py	/^_KUBECTL = 'kubectl'$/;"	kind:variable	line:29
+_MAX_DAYS_WITHOUT_RUN	../dashboard_app/main.py	/^_MAX_DAYS_WITHOUT_RUN = 14$/;"	kind:variable	line:35
+_OUTPUT_FILE_ENV_VAR	../scripts/util/benchmark_util.py	/^_OUTPUT_FILE_ENV_VAR = 'TF_DIST_BENCHMARK_RESULTS_FILE'$/;"	kind:variable	line:32
+_OUTPUT_FILE_ENV_VAR	../tools/run_all_CNN_benchmarks.py	/^_OUTPUT_FILE_ENV_VAR = 'TF_DIST_BENCHMARK_RESULTS_FILE'$/;"	kind:variable	line:42
+_OUTPUT_FILE_ENV_VAR	../tools/run_distributed_benchmarks.py	/^_OUTPUT_FILE_ENV_VAR = 'TF_DIST_BENCHMARK_RESULTS_FILE'$/;"	kind:variable	line:35
+_PORT	../tools/run_all_CNN_benchmarks.py	/^_PORT = 5000$/;"	kind:variable	line:44
+_PORT	../tools/run_distributed_benchmarks.py	/^_PORT = 5000$/;"	kind:variable	line:37
+_ParamSpec	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^_ParamSpec = namedtuple('_ParamSpec',$/;"	kind:variable	line:50
+_PrintLogs	../tools/kubectl_util.py	/^def _PrintLogs(pod_name_prefix, job_name):$/;"	kind:function	line:173
+_RunBenchmark	../tools/run_all_CNN_benchmarks.py	/^def _RunBenchmark(name, yaml_file):$/;"	kind:function	line:48
+_RunBenchmark	../tools/run_distributed_benchmarks.py	/^def _RunBenchmark(name, yaml_file):$/;"	kind:function	line:52
+_SHARED_VOLUME_INFO	../tools/k8s_tensorflow_lib.py	/^_SHARED_VOLUME_INFO = {'shared': ('\/shared', '\/shared')}$/;"	kind:variable	line:129
+_TEST_NAME_ENV_VAR	../scripts/tf_cnn_benchmarks/cbuild_benchmark_storage.py	/^_TEST_NAME_ENV_VAR = 'TF_DIST_BENCHMARK_NAME'$/;"	kind:variable	line:28
+_TEST_NAME_ENV_VAR	../scripts/util/benchmark_util.py	/^_TEST_NAME_ENV_VAR = 'TF_DIST_BENCHMARK_NAME'$/;"	kind:variable	line:33
+_TEST_NAME_ENV_VAR	../tools/run_all_CNN_benchmarks.py	/^_TEST_NAME_ENV_VAR = 'TF_DIST_BENCHMARK_NAME'$/;"	kind:variable	line:43
+_TEST_NAME_ENV_VAR	../tools/run_distributed_benchmarks.py	/^_TEST_NAME_ENV_VAR = 'TF_DIST_BENCHMARK_NAME'$/;"	kind:variable	line:36
+_TensorConversionFunction	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def _TensorConversionFunction(self, dtype=None, name=None, as_ref=False):$/;"	kind:member	line:343
+_VOLUME_MOUNT_TEMPLATE	../tools/k8s_tensorflow_lib.py	/^_VOLUME_MOUNT_TEMPLATE = '{name: %s, mountPath: %s}'$/;"	kind:variable	line:130
+_VOLUME_TEMPLATE	../tools/k8s_tensorflow_lib.py	/^_VOLUME_TEMPLATE = '{name: %s, hostPath: {path: %s}}'$/;"	kind:variable	line:131
+_WaitUntil	../tools/kubectl_util.py	/^def _WaitUntil(timeout, predicate, *args):$/;"	kind:function	line:37
+__call__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __call__(self, getter, *args, **kwargs):$/;"	kind:member	line:52
+__call__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __call__(self, getter, name, *args, **kwargs):$/;"	kind:member	line:378
+__call__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __call__(self, getter, name, *args, **kwargs):$/;"	kind:member	line:74
+__call__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __call__(self, op):$/;"	kind:member	line:105
+__init__	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def __init__(self, params):$/;"	kind:member	line:638
+__init__	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def __init__(self, sess, global_step_op,$/;"	kind:member	line:402
+__init__	../scripts/tf_cnn_benchmarks/cnn_util.py	/^  def __init__(self, parties):$/;"	kind:member	line:56
+__init__	../scripts/tf_cnn_benchmarks/cnn_util.py	/^  def __init__(self, sess, put_ops, batch_group_size):$/;"	kind:member	line:118
+__init__	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def __init__(self,$/;"	kind:member	line:35
+__init__	../scripts/tf_cnn_benchmarks/datasets.py	/^  def __init__(self, data_dir=None):$/;"	kind:member	line:110
+__init__	../scripts/tf_cnn_benchmarks/datasets.py	/^  def __init__(self, data_dir=None):$/;"	kind:member	line:150
+__init__	../scripts/tf_cnn_benchmarks/datasets.py	/^  def __init__(self, name, height=None, width=None, depth=None, data_dir=None,$/;"	kind:member	line:65
+__init__	../scripts/tf_cnn_benchmarks/datasets.py	/^  def __init__(self, unused_data_dir):$/;"	kind:member	line:134
+__init__	../scripts/tf_cnn_benchmarks/models/alexnet_model.py	/^  def __init__(self):$/;"	kind:member	line:31
+__init__	../scripts/tf_cnn_benchmarks/models/alexnet_model.py	/^  def __init__(self):$/;"	kind:member	line:61
+__init__	../scripts/tf_cnn_benchmarks/models/densenet_model.py	/^  def __init__(self, model, layer_counts, growth_rate):$/;"	kind:member	line:30
+__init__	../scripts/tf_cnn_benchmarks/models/googlenet_model.py	/^  def __init__(self):$/;"	kind:member	line:30
+__init__	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^  def __init__(self):$/;"	kind:member	line:162
+__init__	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^  def __init__(self, auxiliary=False):$/;"	kind:member	line:46
+__init__	../scripts/tf_cnn_benchmarks/models/lenet_model.py	/^  def __init__(self):$/;"	kind:member	line:29
+__init__	../scripts/tf_cnn_benchmarks/models/mobilenet.py	/^  def __init__(self, model):$/;"	kind:member	line:29
+__init__	../scripts/tf_cnn_benchmarks/models/mobilenet.py	/^  def __init__(self, model, layer_counts, growth_rate):$/;"	kind:member	line:35
+__init__	../scripts/tf_cnn_benchmarks/models/model.py	/^  def __init__(self,$/;"	kind:member	line:21
+__init__	../scripts/tf_cnn_benchmarks/models/overfeat_model.py	/^  def __init__(self):$/;"	kind:member	line:31
+__init__	../scripts/tf_cnn_benchmarks/models/resnet_model.py	/^  def __init__(self, model, layer_counts):$/;"	kind:member	line:189
+__init__	../scripts/tf_cnn_benchmarks/models/resnet_model.py	/^  def __init__(self, model, layer_counts):$/;"	kind:member	line:237
+__init__	../scripts/tf_cnn_benchmarks/models/squeezenet_model.py	/^  def __init__(self, model):$/;"	kind:member	line:53
+__init__	../scripts/tf_cnn_benchmarks/models/squeezenet_model.py	/^  def __init__(self, model):$/;"	kind:member	line:82
+__init__	../scripts/tf_cnn_benchmarks/models/trivial_model.py	/^  def __init__(self):$/;"	kind:member	line:23
+__init__	../scripts/tf_cnn_benchmarks/models/vgg_model.py	/^  def __init__(self):$/;"	kind:member	line:57
+__init__	../scripts/tf_cnn_benchmarks/models/vgg_model.py	/^  def __init__(self):$/;"	kind:member	line:66
+__init__	../scripts/tf_cnn_benchmarks/models/vgg_model.py	/^  def __init__(self):$/;"	kind:member	line:75
+__init__	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def __init__(self, height, width, batch_size, num_splits,$/;"	kind:member	line:666
+__init__	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def __init__(self,$/;"	kind:member	line:420
+__init__	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def __init__(self,$/;"	kind:member	line:544
+__init__	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def __init__(self,$/;"	kind:member	line:724
+__init__	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def __init__(self,$/;"	kind:member	line:846
+__init__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __init__(self, benchmark_cnn):$/;"	kind:member	line:127
+__init__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __init__(self, benchmark_cnn):$/;"	kind:member	line:443
+__init__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __init__(self, benchmark_cnn):$/;"	kind:member	line:836
+__init__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __init__(self, benchmark_cnn, all_reduce_spec):$/;"	kind:member	line:633
+__init__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __init__(self, benchmark_cnn, all_reduce_spec, job_name,$/;"	kind:member	line:705
+__init__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __init__(self, device_num, devices, cpu_device, variable_mgr):$/;"	kind:member	line:363
+__init__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __init__(self, devices, device_for_small_variables,$/;"	kind:member	line:45
+__init__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __init__(self, real_var, var_stage_get, variable_mgr):$/;"	kind:member	line:287
+__init__	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def __init__(self, worker_device, ps_devices):$/;"	kind:member	line:93
+__init__.py	../scripts/tf_cnn_benchmarks/models/__init__.py	1;"	kind:file	line:1
+__init__.py	../scripts/util/__init__.py	1;"	kind:file	line:1
+__str__	../scripts/tf_cnn_benchmarks/datasets.py	/^  def __str__(self):$/;"	kind:member	line:94
+_batch_norm_without_layers	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def _batch_norm_without_layers(self, input_layer, decay, use_scale, epsilon):$/;"	kind:member	line:412
+_benchmark_cnn	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def _benchmark_cnn(self):$/;"	kind:member	line:991
+_build_fetches	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def _build_fetches(self, global_step, all_logits, losses, device_grads,$/;"	kind:member	line:1294
+_build_image_processing	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def _build_image_processing(self, shift_ratio=0):$/;"	kind:member	line:1196
+_build_model	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def _build_model(self):$/;"	kind:member	line:1223
+_build_model_single_session	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def _build_model_single_session(self):$/;"	kind:member	line:1388
+_construct_vgg	../scripts/tf_cnn_benchmarks/models/vgg_model.py	/^def _construct_vgg(cnn, num_conv_layers):$/;"	kind:function	line:31
+_conv2d_impl	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def _conv2d_impl(self, input_layer, num_channels_in, filters, kernel_size,$/;"	kind:member	line:121
+_distort_image	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def _distort_image(self, image):$/;"	kind:member	line:578
+_eval_cnn	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def _eval_cnn(self):$/;"	kind:member	line:912
+_eval_image	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def _eval_image(self, image):$/;"	kind:member	line:601
+_eval_once	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def _eval_once(self, saver, summary_writer, target,$/;"	kind:member	line:939
+_loop_producer	../scripts/tf_cnn_benchmarks/cnn_util.py	/^  def _loop_producer(self):$/;"	kind:member	line:156
+_pool	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def _pool(self,$/;"	kind:member	line:243
+_ref	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def _ref(self):$/;"	kind:member	line:303
+_remove_shadow_var_prefix_if_present	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def _remove_shadow_var_prefix_if_present(self, var_name):$/;"	kind:member	line:937
+_should_put	../scripts/tf_cnn_benchmarks/cnn_util.py	/^  def _should_put(self):$/;"	kind:member	line:130
+_strip_port	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def _strip_port(self, s):$/;"	kind:member	line:913
+_value	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def _value(self):$/;"	kind:member	line:299
+abort	../scripts/tf_cnn_benchmarks/cnn_util.py	/^  def abort(self):$/;"	kind:member	line:85
+add_forward_pass_and_gradients	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def add_forward_pass_and_gradients($/;"	kind:member	line:1487
+add_inference	../scripts/tf_cnn_benchmarks/models/alexnet_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:34
+add_inference	../scripts/tf_cnn_benchmarks/models/alexnet_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:64
+add_inference	../scripts/tf_cnn_benchmarks/models/densenet_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:53
+add_inference	../scripts/tf_cnn_benchmarks/models/googlenet_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:33
+add_inference	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:165
+add_inference	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:50
+add_inference	../scripts/tf_cnn_benchmarks/models/lenet_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:32
+add_inference	../scripts/tf_cnn_benchmarks/models/mobilenet.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:58
+add_inference	../scripts/tf_cnn_benchmarks/models/model.py	/^  def add_inference(self, unused_cnn):$/;"	kind:member	line:60
+add_inference	../scripts/tf_cnn_benchmarks/models/overfeat_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:34
+add_inference	../scripts/tf_cnn_benchmarks/models/resnet_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:203
+add_inference	../scripts/tf_cnn_benchmarks/models/resnet_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:242
+add_inference	../scripts/tf_cnn_benchmarks/models/squeezenet_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:61
+add_inference	../scripts/tf_cnn_benchmarks/models/squeezenet_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:92
+add_inference	../scripts/tf_cnn_benchmarks/models/trivial_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:26
+add_inference	../scripts/tf_cnn_benchmarks/models/vgg_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:60
+add_inference	../scripts/tf_cnn_benchmarks/models/vgg_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:69
+add_inference	../scripts/tf_cnn_benchmarks/models/vgg_model.py	/^  def add_inference(self, cnn):$/;"	kind:member	line:78
+add_sync_queues_and_barrier	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def add_sync_queues_and_barrier(self, name_prefix,$/;"	kind:member	line:1646
+affine	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def affine(self,$/;"	kind:member	line:314
+aggregate_gradients_using_copy	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^def aggregate_gradients_using_copy(tower_grads, use_mean):$/;"	kind:function	line:1151
+aggregate_gradients_using_copy_with_device_selection	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^def aggregate_gradients_using_copy_with_device_selection($/;"	kind:function	line:1095
+aggregate_gradients_using_copy_with_variable_colocation	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^def aggregate_gradients_using_copy_with_variable_colocation($/;"	kind:function	line:1122
+aggregate_single_gradient_using_copy	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^def aggregate_single_gradient_using_copy(grad_and_vars, use_mean):$/;"	kind:function	line:1169
+alexnet_model.py	../scripts/tf_cnn_benchmarks/models/alexnet_model.py	1;"	kind:file	line:1
+ans	../my_tests/LmdbInputImagePreprocessor.py	/^  ans = False$/;"	kind:variable	line:170
+apool	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def apool(self,$/;"	kind:member	line:291
+app	../dashboard_app/main.py	/^app = Flask(__name__)$/;"	kind:variable	line:29
+append_apply_gradients_ops	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def append_apply_gradients_ops($/;"	kind:member	line:172
+append_apply_gradients_ops	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def append_apply_gradients_ops(self, gradient_state, opt,$/;"	kind:member	line:895
+argument_name	../dashboard_app/main.py	/^def argument_name(argument):$/;"	kind:function	line:41
+assign_sub	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def assign_sub(self, delta, name=None):$/;"	kind:member	line:316
+batch_length	../my_tests/reportLmdbError.py	/^batch_length = 11$/;"	kind:variable	line:21
+batch_norm	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def batch_norm(self, input_layer=None, decay=0.999, scale=False,$/;"	kind:member	line:454
+benchmark_cnn.py	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	1;"	kind:file	line:1
+benchmark_data	../dashboard_app/main.py	/^def benchmark_data():$/;"	kind:function	line:133
+benchmark_one_step	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^def benchmark_one_step(sess,$/;"	kind:function	line:512
+benchmark_storage.py	../scripts/tf_cnn_benchmarks/benchmark_storage.py	1;"	kind:file	line:1
+benchmark_util.py	../scripts/util/benchmark_util.py	1;"	kind:file	line:1
+benchmark_util_test.py	../scripts/util/benchmark_util_test.py	1;"	kind:file	line:1
+body	../my_tests/LmdbInputImagePreprocessor.py	/^                                       body=in_body,$/;"	kind:variable	line:119
+body	../my_tests/LmdbInputImagePreprocessor.py	/^                                 body=out_body,$/;"	kind:variable	line:139
+bottleneck_block	../scripts/tf_cnn_benchmarks/models/resnet_model.py	/^def bottleneck_block(cnn, depth, depth_bottleneck, stride, pre_activation):$/;"	kind:function	line:125
+bottleneck_block_v1	../scripts/tf_cnn_benchmarks/models/resnet_model.py	/^def bottleneck_block_v1(cnn, depth, depth_bottleneck, stride):$/;"	kind:function	line:40
+bottleneck_block_v2	../scripts/tf_cnn_benchmarks/models/resnet_model.py	/^def bottleneck_block_v2(cnn, depth, depth_bottleneck, stride):$/;"	kind:function	line:80
+buffer1	../my_tests/reportLmdbError.py	/^    buffer1 = sess.run(jpg_buffer1)$/;"	kind:variable	line:46
+buffer2	../my_tests/reportLmdbError.py	/^    buffer2 = sess.run(jpg_buffer2)$/;"	kind:variable	line:43
+build_all_reduce_device_prefixes	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^def build_all_reduce_device_prefixes(job_name, num_tasks):$/;"	kind:function	line:577
+capacity	../my_tests/LmdbInputImagePreprocessor.py	/^    capacity=2,$/;"	kind:variable	line:96
+capacity	../my_tests/reportLmdbError.py	/^                    capacity=32,$/;"	kind:variable	line:28
+cbuild_benchmark_storage.py	../scripts/tf_cnn_benchmarks/cbuild_benchmark_storage.py	1;"	kind:file	line:1
+cnn_util.py	../scripts/tf_cnn_benchmarks/cnn_util.py	1;"	kind:file	line:1
+concat_layers	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def concat_layers(self, list_of_layers=None):$/;"	kind:member	line:497
+contains_any	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^def contains_any(haystack, needles):$/;"	kind:function	line:1041
+conv	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def conv(self,$/;"	kind:member	line:144
+convert_csv_to_json.py	../scripts/util/convert_csv_to_json.py	1;"	kind:file	line:1
+convert_csv_to_json_test.py	../scripts/util/convert_csv_to_json_test.py	1;"	kind:file	line:1
+convnet_builder.py	../scripts/tf_cnn_benchmarks/convnet_builder.py	1;"	kind:file	line:1
+create_config_proto	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^def create_config_proto(params):$/;"	kind:function	line:472
+create_dataset	../scripts/tf_cnn_benchmarks/datasets.py	/^def create_dataset(data_dir, data_name):$/;"	kind:function	line:35
+create_outer_variable_scope	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def create_outer_variable_scope(self, device_num):$/;"	kind:member	line:139
+create_outer_variable_scope	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def create_outer_variable_scope(self, device_num):$/;"	kind:member	line:232
+create_outer_variable_scope	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def create_outer_variable_scope(self, device_num):$/;"	kind:member	line:257
+create_outer_variable_scope	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def create_outer_variable_scope(self, device_num):$/;"	kind:member	line:455
+create_outer_variable_scope	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def create_outer_variable_scope(self, device_num):$/;"	kind:member	line:647
+create_outer_variable_scope	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def create_outer_variable_scope(self, device_num):$/;"	kind:member	line:718
+create_outer_variable_scope	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def create_outer_variable_scope(self, device_num):$/;"	kind:member	line:805
+create_outer_variable_scope	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def create_outer_variable_scope(self, device_num):$/;"	kind:member	line:842
+create_outer_variable_scope	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def create_outer_variable_scope(self, device_num):$/;"	kind:member	line:870
+datasets.py	../scripts/tf_cnn_benchmarks/datasets.py	1;"	kind:file	line:1
+datum_size	../my_tests/LmdbInputImagePreprocessor.py	/^datum_size = 196625$/;"	kind:variable	line:102
+decode_jpeg	../scripts/tf_cnn_benchmarks/preprocessing.py	/^def decode_jpeg(image_buffer, scope=None):  # , dtype=tf.float32):$/;"	kind:function	line:146
+define_flags	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^def define_flags():$/;"	kind:function	line:376
+dense_block	../scripts/tf_cnn_benchmarks/models/densenet_model.py	/^  def dense_block(self, cnn, growth_rate):$/;"	kind:member	line:36
+dense_block	../scripts/tf_cnn_benchmarks/models/mobilenet.py	/^  def dense_block(self, cnn, growth_rate):$/;"	kind:member	line:41
+densenet_model.py	../scripts/tf_cnn_benchmarks/models/densenet_model.py	1;"	kind:file	line:1
+distort_color	../scripts/tf_cnn_benchmarks/preprocessing.py	/^def distort_color(image, batch_position=0, scope=None):$/;"	kind:function	line:375
+distort_fn_0	../scripts/tf_cnn_benchmarks/preprocessing.py	/^    def distort_fn_0(image=image):$/;"	kind:function	line:396
+distort_fn_1	../scripts/tf_cnn_benchmarks/preprocessing.py	/^    def distort_fn_1(image=image):$/;"	kind:function	line:403
+done	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def done(self):$/;"	kind:member	line:433
+done	../scripts/tf_cnn_benchmarks/cnn_util.py	/^  def done(self):$/;"	kind:member	line:133
+dropout	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def dropout(self, keep_prob=0.5, input_layer=None):$/;"	kind:member	line:396
+dtype	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def dtype(self):$/;"	kind:member	line:312
+dtypes	../my_tests/LmdbInputImagePreprocessor.py	/^    dtypes=[dtypes.string],$/;"	kind:variable	line:97
+dtypes	../my_tests/reportLmdbError.py	/^                    dtypes=[dtypes.string],$/;"	kind:variable	line:29
+each_tower_has_variables	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def each_tower_has_variables(self):$/;"	kind:member	line:131
+each_tower_has_variables	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def each_tower_has_variables(self):$/;"	kind:member	line:229
+each_tower_has_variables	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def each_tower_has_variables(self):$/;"	kind:member	line:254
+each_tower_has_variables	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def each_tower_has_variables(self):$/;"	kind:member	line:644
+each_tower_has_variables	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def each_tower_has_variables(self):$/;"	kind:member	line:715
+each_tower_has_variables	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def each_tower_has_variables(self):$/;"	kind:member	line:802
+each_tower_has_variables	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def each_tower_has_variables(self):$/;"	kind:member	line:867
+elapsed_time	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def elapsed_time(self):$/;"	kind:member	line:439
+enqueue_op	../my_tests/LmdbInputImagePreprocessor.py	/^enqueue_op = keys_queue.enqueue([values])$/;"	kind:variable	line:149
+eval_image	../scripts/tf_cnn_benchmarks/preprocessing.py	/^def eval_image(image,$/;"	kind:function	line:171
+expand	../scripts/tf_cnn_benchmarks/models/squeezenet_model.py	/^  def expand(cnn, num_outputs):$/;"	kind:function	line:39
+fire_module	../scripts/tf_cnn_benchmarks/models/squeezenet_model.py	/^def fire_module(cnn,$/;"	kind:function	line:30
+full_path	../my_tests/LmdbInputImagePreprocessor.py	/^full_path = path_prefix + mode + path_postfix$/;"	kind:variable	line:34
+full_path	../my_tests/reportLmdbError.py	/^full_path = path_prefix + mode + path_postfix$/;"	kind:variable	line:18
+get_batch_size	../scripts/tf_cnn_benchmarks/models/model.py	/^  def get_batch_size(self):$/;"	kind:member	line:40
+get_cifar10_model_config	../scripts/tf_cnn_benchmarks/models/model_config.py	/^def get_cifar10_model_config(model):$/;"	kind:function	line:68
+get_custom_getter	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def get_custom_getter(self):$/;"	kind:member	line:59
+get_data_from_csv	../scripts/util/convert_csv_to_json.py	/^def get_data_from_csv(csv_reader):$/;"	kind:function	line:31
+get_data_type	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^def get_data_type(params):$/;"	kind:function	line:447
+get_default_batch_size	../scripts/tf_cnn_benchmarks/models/model.py	/^  def get_default_batch_size(self):$/;"	kind:member	line:46
+get_devices	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_devices(self):$/;"	kind:member	line:190
+get_devices	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_devices(self):$/;"	kind:member	line:242
+get_devices	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_devices(self):$/;"	kind:member	line:269
+get_devices	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_devices(self):$/;"	kind:member	line:693
+get_devices	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_devices(self):$/;"	kind:member	line:790
+get_devices	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_devices(self):$/;"	kind:member	line:823
+get_devices	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_devices(self):$/;"	kind:member	line:967
+get_gpu_volume_mounts	../tools/run_distributed_benchmarks.py	/^def get_gpu_volume_mounts():$/;"	kind:function	line:121
+get_gradients_to_apply	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_gradients_to_apply(self, device_num, gradient_state):$/;"	kind:member	line:161
+get_gradients_to_apply	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_gradients_to_apply(self, device_num, gradient_state):$/;"	kind:member	line:238
+get_gradients_to_apply	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_gradients_to_apply(self, device_num, gradient_state):$/;"	kind:member	line:263
+get_gradients_to_apply	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_gradients_to_apply(self, device_num, gradient_state):$/;"	kind:member	line:665
+get_gradients_to_apply	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_gradients_to_apply(self, device_num, gradient_state):$/;"	kind:member	line:759
+get_gradients_to_apply	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_gradients_to_apply(self, device_num, gradient_state):$/;"	kind:member	line:819
+get_gradients_to_apply	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_gradients_to_apply(self, device_num, gradient_state):$/;"	kind:member	line:878
+get_image_preprocessor	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def get_image_preprocessor(self):$/;"	kind:member	line:1615
+get_image_preprocessor	../scripts/tf_cnn_benchmarks/datasets.py	/^  def get_image_preprocessor(self):$/;"	kind:member	line:123
+get_image_preprocessor	../scripts/tf_cnn_benchmarks/datasets.py	/^  def get_image_preprocessor(self):$/;"	kind:member	line:137
+get_image_preprocessor	../scripts/tf_cnn_benchmarks/datasets.py	/^  def get_image_preprocessor(self):$/;"	kind:member	line:187
+get_image_preprocessor	../scripts/tf_cnn_benchmarks/datasets.py	/^  def get_image_preprocessor(self):$/;"	kind:member	line:97
+get_image_resize_method	../scripts/tf_cnn_benchmarks/preprocessing.py	/^def get_image_resize_method(resize_method, batch_position=0):$/;"	kind:function	line:99
+get_image_size	../scripts/tf_cnn_benchmarks/models/model.py	/^  def get_image_size(self):$/;"	kind:member	line:37
+get_layer_counts	../scripts/tf_cnn_benchmarks/models/model.py	/^  def get_layer_counts(self):$/;"	kind:member	line:49
+get_learning_rate	../scripts/tf_cnn_benchmarks/models/alexnet_model.py	/^  def get_learning_rate(self, global_step=None, batch_size=None):$/;"	kind:member	line:77
+get_learning_rate	../scripts/tf_cnn_benchmarks/models/densenet_model.py	/^  def get_learning_rate(self, global_step=None, batch_size=None):$/;"	kind:member	line:77
+get_learning_rate	../scripts/tf_cnn_benchmarks/models/mobilenet.py	/^  def get_learning_rate(self, global_step=None, batch_size=None):$/;"	kind:member	line:82
+get_learning_rate	../scripts/tf_cnn_benchmarks/models/model.py	/^  def get_learning_rate(self, global_step=None, batch_size=None):$/;"	kind:member	line:52
+get_learning_rate	../scripts/tf_cnn_benchmarks/models/resnet_model.py	/^  def get_learning_rate(self, global_step=None, batch_size=None):$/;"	kind:member	line:269
+get_mode_from_params	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^def get_mode_from_params(params):$/;"	kind:function	line:493
+get_model	../scripts/tf_cnn_benchmarks/models/model.py	/^  def get_model(self):$/;"	kind:member	line:34
+get_model_config	../scripts/tf_cnn_benchmarks/models/model_config.py	/^def get_model_config(model, dataset):$/;"	kind:function	line:30
+get_perf_timing_str	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^def get_perf_timing_str(batch_size, step_train_times, scale=1):$/;"	kind:function	line:558
+get_post_init_ops	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_post_init_ops(self):$/;"	kind:member	line:186
+get_post_init_ops	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_post_init_ops(self):$/;"	kind:member	line:669
+get_post_init_ops	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_post_init_ops(self):$/;"	kind:member	line:766
+get_post_init_ops	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def get_post_init_ops(self):$/;"	kind:member	line:918
+get_variable	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def get_variable(self, name, shape, dtype, cast_dtype, *args, **kwargs):$/;"	kind:member	line:113
+googlenet_model.py	../scripts/tf_cnn_benchmarks/models/googlenet_model.py	1;"	kind:file	line:1
+group_device_names	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^def group_device_names(devices, group_size):$/;"	kind:function	line:596
+help	../scripts/util/convert_csv_to_json.py	/^        help='Name of the test.')$/;"	kind:variable	line:81
+help	../scripts/util/convert_csv_to_json.py	/^        help='Path to output JSON file.')$/;"	kind:variable	line:87
+help	../scripts/util/convert_csv_to_json.py	/^        help='Path to the CSV file.')$/;"	kind:variable	line:84
+help	../tools/run_distributed_benchmarks.py	/^      help='Directory to store benchmark results at.')$/;"	kind:variable	line:222
+help	../tools/run_distributed_benchmarks.py	/^      help='Directory to use as a docker context. By default, docker context '$/;"	kind:variable	line:225
+help	../tools/run_distributed_benchmarks.py	/^      help='Directory to write generated kubernetes configs to.')$/;"	kind:variable	line:219
+help	../tools/run_distributed_benchmarks.py	/^      help='Directory where cuda library files are located on gcloud node.')$/;"	kind:variable	line:235
+help	../tools/run_distributed_benchmarks.py	/^      help='Directory where nvidia library files are located on gcloud node.')$/;"	kind:variable	line:238
+help	../tools/run_distributed_benchmarks.py	/^      help='Whether to build a new docker image or try to use existing one.') $/;"	kind:variable	line:229
+help	../tools/run_distributed_benchmarks.py	/^      help='YAML file with benchmark configs.')$/;"	kind:variable	line:216
+i	../my_tests/LmdbInputImagePreprocessor.py	/^i = 1$/;"	kind:variable	line:54
+in_body	../my_tests/LmdbInputImagePreprocessor.py	/^def in_body(in_iterator, vals):$/;"	kind:function	line:107
+in_i	../my_tests/LmdbInputImagePreprocessor.py	/^in_i = []$/;"	kind:variable	line:114
+in_while_reader	../my_tests/LmdbInputImagePreprocessor.py	/^in_while_reader = []$/;"	kind:variable	line:115
+incept_v3_aux	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^    def incept_v3_aux(cnn):$/;"	kind:function	line:89
+inception_model.py	../scripts/tf_cnn_benchmarks/models/inception_model.py	1;"	kind:file	line:1
+inception_module	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def inception_module(self, name, cols, input_layer=None, in_size=None):$/;"	kind:member	line:350
+inception_v1	../scripts/tf_cnn_benchmarks/models/googlenet_model.py	/^    def inception_v1(cnn, k, l, m, n, p, q):$/;"	kind:function	line:34
+inception_v3_a	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^    def inception_v3_a(cnn, n):$/;"	kind:function	line:51
+inception_v3_b	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^    def inception_v3_b(cnn):$/;"	kind:function	line:57
+inception_v3_c	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^    def inception_v3_c(cnn, n):$/;"	kind:function	line:65
+inception_v3_d	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^    def inception_v3_d(cnn):$/;"	kind:function	line:73
+inception_v3_e	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^    def inception_v3_e(cnn, pooltype):$/;"	kind:function	line:80
+inception_v4_a	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^    def inception_v4_a(cnn):$/;"	kind:function	line:166
+inception_v4_b	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^    def inception_v4_b(cnn):$/;"	kind:function	line:172
+inception_v4_c	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^    def inception_v4_c(cnn):$/;"	kind:function	line:180
+inception_v4_ra	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^def inception_v4_ra(cnn, k, l, m, n):$/;"	kind:function	line:144
+inception_v4_rb	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^def inception_v4_rb(cnn):$/;"	kind:function	line:152
+inception_v4_sa	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^def inception_v4_sa(cnn):$/;"	kind:function	line:125
+inception_v4_sb	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^def inception_v4_sb(cnn):$/;"	kind:function	line:130
+inception_v4_sc	../scripts/tf_cnn_benchmarks/models/inception_model.py	/^def inception_v4_sc(cnn):$/;"	kind:function	line:137
+index	../dashboard_app/main.py	/^def index(pattern=None):$/;"	kind:function	line:59
+inner_custom_getter	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^    def inner_custom_getter(getter, *args, **kwargs):$/;"	kind:function	line:77
+jpg_buffer	../my_tests/LmdbInputImagePreprocessor.py	/^jpg_buffer = tf.decode_raw(values, out_type=tf.uint8)$/;"	kind:variable	line:147
+jpg_buffer1	../my_tests/reportLmdbError.py	/^jpg_buffer1 = tf.decode_raw(values1, out_type=tf.uint8)$/;"	kind:variable	line:34
+jpg_buffer2	../my_tests/reportLmdbError.py	/^jpg_buffer2 = tf.decode_raw(values2, out_type=tf.uint8)$/;"	kind:variable	line:38
+k8s_tensorflow_lib.py	../tools/k8s_tensorflow_lib.py	1;"	kind:file	line:1
+k8s_tensorflow_test.py	../tools/k8s_tensorflow_test.py	1;"	kind:file	line:1
+keys_list	../my_tests/LmdbInputImagePreprocessor.py	/^keys_list = []$/;"	kind:variable	line:52
+keys_queue	../my_tests/LmdbInputImagePreprocessor.py	/^keys_queue = tf.FIFOQueue($/;"	kind:variable	line:95
+keys_queue	../my_tests/reportLmdbError.py	/^keys_queue = tf.FIFOQueue($/;"	kind:variable	line:27
+kubectl_util.py	../tools/kubectl_util.py	1;"	kind:file	line:1
+kubectl_util_test.py	../tools/kubectl_util_test.py	1;"	kind:file	line:1
+lenet_model.py	../scripts/tf_cnn_benchmarks/models/lenet_model.py	1;"	kind:file	line:1
+lmdbImagePreprocessor	../scripts/tf_cnn_benchmarks/preprocessing.py	/^class lmdbImagePreprocessor(object):$/;"	kind:class	line:708
+load_checkpoint	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^def load_checkpoint(saver, sess, ckpt_dir):$/;"	kind:function	line:572
+log_fn	../scripts/tf_cnn_benchmarks/cnn_util.py	/^def log_fn(log):$/;"	kind:function	line:39
+lookup	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def lookup(index):$/;"	kind:function	line:125
+loop_vars	../my_tests/LmdbInputImagePreprocessor.py	/^                                       loop_vars=[in_i[-1], vals],$/;"	kind:variable	line:120
+loop_vars	../my_tests/LmdbInputImagePreprocessor.py	/^                                 loop_vars=[out_i, vals],$/;"	kind:variable	line:140
+loss_function	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^def loss_function(logits, labels, aux_logits):$/;"	kind:function	line:457
+lrn	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def lrn(self, depth_radius, bias, alpha, beta):$/;"	kind:member	line:489
+main	../scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py	/^def main(_):$/;"	kind:function	line:33
+main	../scripts/util/convert_csv_to_json.py	/^def main():$/;"	kind:function	line:65
+main	../tools/run_all_CNN_benchmarks.py	/^def main(_):$/;"	kind:function	line:54
+main	../tools/run_distributed_benchmarks.py	/^def main():$/;"	kind:function	line:142
+main.py	../dashboard_app/main.py	1;"	kind:file	line:1
+main_test.py	../dashboard_app/main_test.py	1;"	kind:file	line:1
+make_params	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^def make_params(**kwargs):$/;"	kind:function	line:605
+make_params_from_flags	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^def make_params_from_flags():$/;"	kind:function	line:623
+minibatch	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def minibatch(self, dataset, subset, use_datasets, shift_ratio=-1):$/;"	kind:member	line:474
+minibatch	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def minibatch(self, dataset, subset, use_datasets, shift_ratio=-1):$/;"	kind:member	line:619
+minibatch	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def minibatch(self, dataset, subset, use_datasets, shift_ratio=-1):$/;"	kind:member	line:679
+minibatch	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def minibatch(self, dataset, subset, use_datasets, shift_ratio=-1):$/;"	kind:member	line:777
+minibatch	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def minibatch(self, dataset, subset, use_datasets, shift_ratio=-1):$/;"	kind:member	line:874
+mobilenet.py	../scripts/tf_cnn_benchmarks/models/mobilenet.py	1;"	kind:file	line:1
+mode	../my_tests/LmdbInputImagePreprocessor.py	/^mode = supported_modes[0]$/;"	kind:variable	line:32
+mode	../my_tests/reportLmdbError.py	/^mode = supported_modes[0]$/;"	kind:variable	line:17
+model.py	../scripts/tf_cnn_benchmarks/models/model.py	1;"	kind:file	line:1
+model_config.py	../scripts/tf_cnn_benchmarks/models/model_config.py	1;"	kind:file	line:1
+mpool	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def mpool(self,$/;"	kind:member	line:279
+notify_image_consumption	../scripts/tf_cnn_benchmarks/cnn_util.py	/^  def notify_image_consumption(self):$/;"	kind:member	line:146
+num_classes	../scripts/tf_cnn_benchmarks/datasets.py	/^  def num_classes(self):$/;"	kind:member	line:83
+num_classes	../scripts/tf_cnn_benchmarks/datasets.py	/^  def num_classes(self, val):$/;"	kind:member	line:87
+num_examples_per_epoch	../scripts/tf_cnn_benchmarks/datasets.py	/^  def num_examples_per_epoch(self, subset):$/;"	kind:member	line:91
+num_examples_per_epoch	../scripts/tf_cnn_benchmarks/datasets.py	/^  def num_examples_per_epoch(self, subset='train'):$/;"	kind:member	line:115
+num_examples_per_epoch	../scripts/tf_cnn_benchmarks/datasets.py	/^  def num_examples_per_epoch(self, subset='train'):$/;"	kind:member	line:179
+num_steps	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def num_steps(self):$/;"	kind:member	line:436
+out_body	../my_tests/LmdbInputImagePreprocessor.py	/^def out_body(out_iterator, vals):$/;"	kind:function	line:126
+out_i	../my_tests/LmdbInputImagePreprocessor.py	/^out_i = tf.constant(0)$/;"	kind:variable	line:136
+out_while_reader	../my_tests/LmdbInputImagePreprocessor.py	/^out_while_reader = tf.while_loop(cond=lambda out_i, vals: tf.less(out_i, 2),$/;"	kind:variable	line:138
+overfeat_model.py	../scripts/tf_cnn_benchmarks/models/overfeat_model.py	1;"	kind:file	line:1
+parallel_iterations	../my_tests/LmdbInputImagePreprocessor.py	/^                                       parallel_iterations=1))$/;"	kind:variable	line:123
+parallel_iterations	../my_tests/LmdbInputImagePreprocessor.py	/^                                 parallel_iterations=1)$/;"	kind:variable	line:143
+parse_all_reduce_spec	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^def parse_all_reduce_spec(all_reduce_spec):$/;"	kind:function	line:493
+parse_and_preprocess	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def parse_and_preprocess(self, value, batch_position):$/;"	kind:member	line:469
+parse_and_preprocess	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def parse_and_preprocess(self, value, batch_position):$/;"	kind:member	line:772
+parse_example_proto	../scripts/tf_cnn_benchmarks/preprocessing.py	/^def parse_example_proto(example_serialized):$/;"	kind:function	line:28
+parse_general_int	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^def parse_general_int(s):$/;"	kind:function	line:470
+parser	../scripts/util/convert_csv_to_json.py	/^    parser = argparse.ArgumentParser()$/;"	kind:variable	line:76
+parser	../tools/run_distributed_benchmarks.py	/^  parser = argparse.ArgumentParser()$/;"	kind:variable	line:211
+path_postfix	../my_tests/LmdbInputImagePreprocessor.py	/^path_postfix = '_lmdb'$/;"	kind:variable	line:30
+path_postfix	../my_tests/reportLmdbError.py	/^path_postfix = '_lmdb'$/;"	kind:variable	line:15
+path_prefix	../my_tests/LmdbInputImagePreprocessor.py	/^path_prefix = '\/mnt\/terabyte\/datasets\/imagenet\/caffe\/ilsvrc12_'$/;"	kind:variable	line:29
+path_prefix	../my_tests/reportLmdbError.py	/^path_prefix = '\/mnt\/terabyte\/datasets\/imagenet\/caffe\/ilsvrc12_'$/;"	kind:variable	line:14
+preprocess	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def preprocess(self, image_buffer, bbox, batch_position):$/;"	kind:member	line:450
+preprocess	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def preprocess(self, image_buffer, bbox, batch_position):$/;"	kind:member	line:756
+preprocess	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def preprocess(self, raw_image):$/;"	kind:member	line:609
+preprocess_device_grads	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def preprocess_device_grads(self, device_grads):$/;"	kind:member	line:144
+preprocess_device_grads	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def preprocess_device_grads(self, device_grads):$/;"	kind:member	line:235
+preprocess_device_grads	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def preprocess_device_grads(self, device_grads):$/;"	kind:member	line:260
+preprocess_device_grads	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def preprocess_device_grads(self, device_grads):$/;"	kind:member	line:650
+preprocess_device_grads	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def preprocess_device_grads(self, device_grads):$/;"	kind:member	line:731
+preprocess_device_grads	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def preprocess_device_grads(self, device_grads):$/;"	kind:member	line:815
+preprocess_device_grads	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def preprocess_device_grads(self, device_grads):$/;"	kind:member	line:875
+preprocessing.py	../scripts/tf_cnn_benchmarks/preprocessing.py	1;"	kind:file	line:1
+print_info	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def print_info(self):$/;"	kind:member	line:852
+queue_runner_required	../scripts/tf_cnn_benchmarks/datasets.py	/^  def queue_runner_required(self):$/;"	kind:member	line:100
+raw_devices_across_tasks	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def raw_devices_across_tasks(self, is_local=False):$/;"	kind:member	line:841
+read_data_files	../scripts/tf_cnn_benchmarks/datasets.py	/^  def read_data_files(self, subset='train'):$/;"	kind:member	line:157
+read_value	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def read_value(self):$/;"	kind:member	line:307
+reader	../my_tests/LmdbInputImagePreprocessor.py	/^reader = tf.LMDBReader(name='reader')$/;"	kind:variable	line:94
+reader	../my_tests/reportLmdbError.py	/^reader = tf.LMDBReader(name='reader')$/;"	kind:variable	line:26
+reader	../scripts/tf_cnn_benchmarks/datasets.py	/^  def reader(self):$/;"	kind:member	line:79
+reportLmdbError.py	../my_tests/reportLmdbError.py	1;"	kind:file	line:1
+reset_devices_for_task	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def reset_devices_for_task(self, task_num, is_local=False):$/;"	kind:member	line:832
+reshape	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def reshape(self, shape, input_layer=None):$/;"	kind:member	line:304
+residual_block	../scripts/tf_cnn_benchmarks/models/resnet_model.py	/^def residual_block(cnn, depth, stride, pre_activation):$/;"	kind:function	line:141
+resize_method_0	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def resize_method_0():$/;"	kind:function	line:128
+resize_method_1	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def resize_method_1():$/;"	kind:function	line:132
+resize_method_2	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def resize_method_2():$/;"	kind:function	line:136
+resnet_model.py	../scripts/tf_cnn_benchmarks/models/resnet_model.py	1;"	kind:file	line:1
+run	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def run(self):$/;"	kind:member	line:415
+run	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^  def run(self):$/;"	kind:member	line:883
+run_all_CNN_benchmarks.py	../tools/run_all_CNN_benchmarks.py	1;"	kind:file	line:1
+run_distributed_benchmarks.py	../tools/run_distributed_benchmarks.py	1;"	kind:file	line:1
+savable_variables	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def savable_variables(self):$/;"	kind:member	line:194
+savable_variables	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def savable_variables(self):$/;"	kind:member	line:684
+savable_variables	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def savable_variables(self):$/;"	kind:member	line:781
+savable_variables	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def savable_variables(self):$/;"	kind:member	line:946
+server_error	../dashboard_app/main.py	/^def server_error(e):$/;"	kind:function	line:153
+set_batch_size	../scripts/tf_cnn_benchmarks/models/model.py	/^  def set_batch_size(self, batch_size):$/;"	kind:member	line:43
+set_fake_data	../scripts/tf_cnn_benchmarks/preprocessing.py	/^  def set_fake_data(self, fake_images, fake_labels):$/;"	kind:member	line:866
+set_learning_rate	../scripts/tf_cnn_benchmarks/models/model.py	/^  def set_learning_rate(self, learning_rate):$/;"	kind:member	line:57
+setup	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^def setup(params):$/;"	kind:function	line:1688
+shape_invariants	../my_tests/LmdbInputImagePreprocessor.py	/^                                       shape_invariants=[$/;"	kind:variable	line:121
+shape_invariants	../my_tests/LmdbInputImagePreprocessor.py	/^                                 shape_invariants=[$/;"	kind:variable	line:141
+shapes	../my_tests/LmdbInputImagePreprocessor.py	/^    shapes=())$/;"	kind:variable	line:98
+shapes	../my_tests/reportLmdbError.py	/^                    shapes=())$/;"	kind:variable	line:30
+spatial_mean	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def spatial_mean(self, keep_dims=False):$/;"	kind:member	line:388
+split_grads_by_size	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^def split_grads_by_size(threshold_size, device_grads):$/;"	kind:function	line:971
+squeeze	../scripts/tf_cnn_benchmarks/models/squeezenet_model.py	/^  def squeeze(cnn, num_outputs):$/;"	kind:function	line:36
+squeezenet_model.py	../scripts/tf_cnn_benchmarks/models/squeezenet_model.py	1;"	kind:file	line:1
+start	../scripts/tf_cnn_benchmarks/cnn_util.py	/^  def start(self):$/;"	kind:member	line:139
+store_benchmark	../scripts/tf_cnn_benchmarks/benchmark_storage.py	/^def store_benchmark(data, storage_type=None):$/;"	kind:function	line:18
+store_benchmarks	../scripts/tf_cnn_benchmarks/benchmark_cnn.py	/^def store_benchmarks(names_to_values, params):$/;"	kind:function	line:1683
+store_data_in_json	../scripts/util/benchmark_util.py	/^def store_data_in_json($/;"	kind:function	line:44
+sum_grad_and_var_all_reduce	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^def sum_grad_and_var_all_reduce(grad_and_vars, num_workers, alg, gpu_indices,$/;"	kind:function	line:1003
+sum_gradients_all_reduce	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^def sum_gradients_all_reduce(dev_prefixes, tower_grads, num_workers,$/;"	kind:function	line:1058
+supported_modes	../my_tests/LmdbInputImagePreprocessor.py	/^supported_modes = ['train', 'val']$/;"	kind:variable	line:31
+supported_modes	../my_tests/reportLmdbError.py	/^supported_modes = ['train', 'val']$/;"	kind:variable	line:16
+supports_staged_vars	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def supports_staged_vars(self):$/;"	kind:member	line:135
+supports_staged_vars	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def supports_staged_vars(self):$/;"	kind:member	line:452
+supports_staged_vars	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def supports_staged_vars(self):$/;"	kind:member	line:849
+switch_to_aux_top_layer	../scripts/tf_cnn_benchmarks/convnet_builder.py	/^  def switch_to_aux_top_layer(self):$/;"	kind:member	line:99
+tensorflow_version	../scripts/tf_cnn_benchmarks/cnn_util.py	/^def tensorflow_version():$/;"	kind:function	line:34
+tensorflow_version_tuple	../scripts/tf_cnn_benchmarks/cnn_util.py	/^def tensorflow_version_tuple():$/;"	kind:function	line:28
+test	../dashboard_app/main.py	/^def test(test_id):$/;"	kind:function	line:86
+testArgumentInvalidFormat	../dashboard_app/main_test.py	/^  def testArgumentInvalidFormat(self):$/;"	kind:member	line:23
+testArgumentValidFormat	../dashboard_app/main_test.py	/^  def testArgumentValidFormat(self):$/;"	kind:member	line:31
+testClusterSpec	../tools/k8s_tensorflow_test.py	/^  def testClusterSpec(self):$/;"	kind:member	line:88
+testCreatePods	../tools/kubectl_util_test.py	/^  def testCreatePods(self, mock_check_call, mock_check_output):$/;"	kind:member	line:35
+testDeletePods	../tools/kubectl_util_test.py	/^  def testDeletePods(self, mock_check_call, mock_check_output):$/;"	kind:member	line:46
+testEnvVar	../tools/k8s_tensorflow_test.py	/^  def testEnvVar(self):$/;"	kind:member	line:74
+testFetchBenchmarkData_InvalidTest	../dashboard_app/main_test.py	/^  def testFetchBenchmarkData_InvalidTest(self):$/;"	kind:member	line:62
+testFetchBenchmarkData_SampleTest	../dashboard_app/main_test.py	/^  def testFetchBenchmarkData_SampleTest(self):$/;"	kind:member	line:70
+testGenerateConfig_LoadBalancer	../tools/k8s_tensorflow_test.py	/^  def testGenerateConfig_LoadBalancer(self):$/;"	kind:member	line:28
+testGenerateConfig_SharedVolume	../tools/k8s_tensorflow_test.py	/^  def testGenerateConfig_SharedVolume(self):$/;"	kind:member	line:51
+testIndexPage	../dashboard_app/main_test.py	/^  def testIndexPage(self):$/;"	kind:member	line:35
+testInvalidCSV_EmptyEntry	../scripts/util/convert_csv_to_json_test.py	/^  def testInvalidCSV_EmptyEntry(self):$/;"	kind:member	line:66
+testInvalidCSV_InvalidDate	../scripts/util/convert_csv_to_json_test.py	/^  def testInvalidCSV_InvalidDate(self):$/;"	kind:member	line:73
+testInvalidCSV_InvalidValue	../scripts/util/convert_csv_to_json_test.py	/^  def testInvalidCSV_InvalidValue(self):$/;"	kind:member	line:79
+testInvalidCSV_LessEntries	../scripts/util/convert_csv_to_json_test.py	/^  def testInvalidCSV_LessEntries(self):$/;"	kind:member	line:52
+testInvalidCSV_MoreEntries	../scripts/util/convert_csv_to_json_test.py	/^  def testInvalidCSV_MoreEntries(self):$/;"	kind:member	line:59
+testPsHosts	../tools/k8s_tensorflow_test.py	/^  def testPsHosts(self):$/;"	kind:member	line:126
+testSingleEntryCSV	../scripts/util/convert_csv_to_json_test.py	/^  def testSingleEntryCSV(self):$/;"	kind:member	line:25
+testStoreDataWithEntries	../scripts/util/benchmark_util_test.py	/^  def testStoreDataWithEntries(self):$/;"	kind:member	line:42
+testStoreDataWithNoEntries	../scripts/util/benchmark_util_test.py	/^  def testStoreDataWithNoEntries(self):$/;"	kind:member	line:32
+testTestPage_InvalidTest	../dashboard_app/main_test.py	/^  def testTestPage_InvalidTest(self):$/;"	kind:member	line:43
+testTestPage_SampleTest	../dashboard_app/main_test.py	/^  def testTestPage_SampleTest(self):$/;"	kind:member	line:51
+testTwoEntryCSV	../scripts/util/convert_csv_to_json_test.py	/^  def testTwoEntryCSV(self):$/;"	kind:member	line:37
+testWaitForCompletion	../tools/kubectl_util_test.py	/^  def testWaitForCompletion(self, mock_check_output):$/;"	kind:member	line:56
+testWorkerHosts	../tools/k8s_tensorflow_test.py	/^  def testWorkerHosts(self):$/;"	kind:member	line:118
+tf_cnn_benchmarks.py	../scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py	1;"	kind:file	line:1
+tf_record_pattern	../scripts/tf_cnn_benchmarks/datasets.py	/^  def tf_record_pattern(self, subset):$/;"	kind:member	line:76
+train_image	../scripts/tf_cnn_benchmarks/preprocessing.py	/^def train_image(image_buffer,$/;"	kind:function	line:254
+trainable_variables_on_device	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def trainable_variables_on_device(self, rel_device_num, abs_device_num,$/;"	kind:member	line:198
+trainable_variables_on_device	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def trainable_variables_on_device(self, rel_device_num, abs_device_num,$/;"	kind:member	line:414
+trainable_variables_on_device	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def trainable_variables_on_device(self, rel_device_num, abs_device_num,$/;"	kind:member	line:461
+trainable_variables_on_device	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def trainable_variables_on_device(self, rel_device_num, abs_device_num,$/;"	kind:member	line:852
+transition_layer	../scripts/tf_cnn_benchmarks/models/densenet_model.py	/^  def transition_layer(self, cnn):$/;"	kind:member	line:46
+transition_layer	../scripts/tf_cnn_benchmarks/models/mobilenet.py	/^  def transition_layer(self, cnn):$/;"	kind:member	line:51
+trivial_model.py	../scripts/tf_cnn_benchmarks/models/trivial_model.py	1;"	kind:file	line:1
+upload_to_benchmark_datastore	../scripts/tf_cnn_benchmarks/cbuild_benchmark_storage.py	/^def upload_to_benchmark_datastore(data, test_name=None, start_time=None):$/;"	kind:function	line:31
+use_synthetic_gpu_images	../scripts/tf_cnn_benchmarks/datasets.py	/^  def use_synthetic_gpu_images(self):$/;"	kind:member	line:103
+use_synthetic_gpu_images	../scripts/tf_cnn_benchmarks/datasets.py	/^  def use_synthetic_gpu_images(self):$/;"	kind:member	line:140
+vals	../my_tests/LmdbInputImagePreprocessor.py	/^vals = tf.zeros(shape=(1, datum_size), dtype=tf.uint8)$/;"	kind:variable	line:104
+var_dict_name	../scripts/tf_cnn_benchmarks/variable_mgr.py	/^  def var_dict_name(self, v):$/;"	kind:member	line:943
+variable_mgr.py	../scripts/tf_cnn_benchmarks/variable_mgr.py	1;"	kind:file	line:1
+vgg_model.py	../scripts/tf_cnn_benchmarks/models/vgg_model.py	1;"	kind:file	line:1
+w	../my_tests/LmdbInputImagePreprocessor.py	/^  w = sess.run(enqueue_op)$/;"	kind:variable	line:163
+wait	../scripts/tf_cnn_benchmarks/cnn_util.py	/^  def wait(self):$/;"	kind:member	line:67
