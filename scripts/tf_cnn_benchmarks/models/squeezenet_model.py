@@ -22,7 +22,7 @@ References:
 
 
 from six.moves import xrange  # pylint: disable=redefined-builtin
-import model as model_lib
+import model
 import tensorflow as tf
 from tensorflow.contrib.framework import add_arg_scope
 from tensorflow.contrib.layers.python.layers import utils
@@ -49,7 +49,7 @@ def fire_module(cnn,
   # return utils.collect_named_outputs(outputs_collections,
   #                                    sc.original_name_scope, outputs)
    
-class SqueezenetModel(model_lib.Model):
+class SqueezenetModel(model.Model):
   def __init__(self, model):
     image_size = 224
     batch_size = 32
@@ -58,6 +58,8 @@ class SqueezenetModel(model_lib.Model):
     super(SqueezenetModel, self).__init__(
         model, image_size, batch_size, learning_rate)
 
+  def set_batch_size(self, b_s):
+    pass
   def add_inference(self, cnn):
     """Original squeezenet architecture for 224x224 images."""
     cnn.conv(96, 7, 7, 2, 2)
@@ -76,7 +78,7 @@ class SqueezenetModel(model_lib.Model):
     cnn.apool(13, 13, 1, 1)
     cnn.spatial_mean()
 
-class SqueezenetCifar10Model(model_lib.Model):
+class SqueezenetCifar10Model(model.Model):
 
   def __init__(self, model):
     batch_norm_decay = 0.999

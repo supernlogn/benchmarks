@@ -74,7 +74,7 @@ _model_name_to_imagenet_model = {
     'nasnet': nasnet_model.NasnetModel,
     'nasnetlarge': nasnet_model.NasnetLargeModel,
     'mobilenet': mobilenet_v2.MobilenetModel,
-    'squeezenet': squeezenet_model.SqueezenetModel,
+    'squeezenet': lambda: squeezenet_model.SqueezenetModel,
 
 }
 

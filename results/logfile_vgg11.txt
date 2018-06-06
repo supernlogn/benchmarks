@@ -1,0 +1,47 @@
+TensorFlow:  1.8
+Model:       vgg11
+Dataset:     synthetic (synthetic)
+Mode:        forward-only
+SingleSess:  False
+Batch size:  20 global
+             20 per device
+Num batches: 10000
+Num epochs:  4.00
+Devices:     ['/gpu:0']
+Data format: NCHW
+Layout optimizer: False
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating model
+Number of parameters: 119550529
+Running warm up
+Dumping trace to /home/sniper/tf_cnn_benchmarks/scripts/tf_cnn_benchmarks/vgg11
+Done warm up
+Step	Img/sec	total_loss	top_1_accuracy	top_5_accuracy
+1	images/sec: 676.8 +/- 0.0 (jitter = 0.0)	0.000	0.000	0.000
+500	images/sec: 635.4 +/- 0.3 (jitter = 5.6)	0.000	0.000	0.000
+1000	images/sec: 634.5 +/- 0.3 (jitter = 5.1)	0.000	0.000	0.000
+1500	images/sec: 634.1 +/- 0.2 (jitter = 4.9)	0.000	0.000	0.000
+2000	images/sec: 633.8 +/- 0.2 (jitter = 4.9)	0.000	0.000	0.000
+2500	images/sec: 633.7 +/- 0.2 (jitter = 4.9)	0.000	0.000	0.000
+3000	images/sec: 633.7 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.000
+3500	images/sec: 633.7 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.000
+4000	images/sec: 633.7 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.000
+4500	images/sec: 633.7 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.000
+5000	images/sec: 633.8 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.000
+5500	images/sec: 633.7 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.000
+6000	images/sec: 633.7 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.000
+6500	images/sec: 633.7 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.000
+7000	images/sec: 633.6 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.050
+7500	images/sec: 633.6 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.000
+8000	images/sec: 633.5 +/- 0.1 (jitter = 4.7)	0.000	0.000	0.050
+8500	images/sec: 633.5 +/- 0.1 (jitter = 4.7)	0.000	0.000	0.000
+9000	images/sec: 633.6 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.000
+9500	images/sec: 633.7 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.000
+10000	images/sec: 633.7 +/- 0.1 (jitter = 4.8)	0.000	0.000	0.000
+----------------------------------------------------------------
+total images/sec: 633.04
+----------------------------------------------------------------
+mean power used: 170.666667 W
+final_metric: 0.000009

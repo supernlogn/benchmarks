@@ -1,0 +1,16 @@
+TensorFlow:  1.8
+Model:       official_resnet_34_v2
+Dataset:     synthetic (synthetic)
+Mode:        forward-only
+SingleSess:  False
+Batch size:  20 global
+             20 per device
+Num batches: 10000
+Num epochs:  4.00
+Devices:     ['/gpu:0']
+Data format: NCHW
+Layout optimizer: False
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating model

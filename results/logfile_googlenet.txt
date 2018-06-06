@@ -1,0 +1,47 @@
+TensorFlow:  1.8
+Model:       googlenet
+Dataset:     synthetic (synthetic)
+Mode:        forward-only
+SingleSess:  False
+Batch size:  20 global
+             20 per device
+Num batches: 10000
+Num epochs:  4.00
+Devices:     ['/gpu:0']
+Data format: NCHW
+Layout optimizer: False
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating model
+Number of parameters: 12308
+Running warm up
+Dumping trace to /home/sniper/tf_cnn_benchmarks/scripts/tf_cnn_benchmarks/googlenet
+Done warm up
+Step	Img/sec	total_loss	top_1_accuracy	top_5_accuracy
+1	images/sec: 1334.2 +/- 0.0 (jitter = 0.0)	0.000	0.000	0.000
+500	images/sec: 1203.8 +/- 1.6 (jitter = 38.2)	0.000	0.000	0.000
+1000	images/sec: 1199.5 +/- 1.3 (jitter = 43.0)	0.000	0.000	0.000
+1500	images/sec: 1197.9 +/- 1.1 (jitter = 44.3)	0.000	0.000	0.000
+2000	images/sec: 1196.8 +/- 0.9 (jitter = 43.1)	0.000	0.000	0.000
+2500	images/sec: 1195.7 +/- 0.8 (jitter = 44.0)	0.000	0.000	0.000
+3000	images/sec: 1195.9 +/- 0.8 (jitter = 44.2)	0.000	0.000	0.000
+3500	images/sec: 1195.8 +/- 0.7 (jitter = 44.2)	0.000	0.000	0.000
+4000	images/sec: 1195.3 +/- 0.7 (jitter = 43.0)	0.000	0.000	0.000
+4500	images/sec: 1195.4 +/- 0.6 (jitter = 43.0)	0.000	0.000	0.000
+5000	images/sec: 1195.5 +/- 0.6 (jitter = 43.3)	0.000	0.000	0.000
+5500	images/sec: 1195.0 +/- 0.6 (jitter = 43.2)	0.000	0.000	0.000
+6000	images/sec: 1194.4 +/- 0.5 (jitter = 41.8)	0.000	0.000	0.000
+6500	images/sec: 1194.0 +/- 0.5 (jitter = 41.2)	0.000	0.000	0.000
+7000	images/sec: 1194.2 +/- 0.5 (jitter = 41.1)	0.000	0.000	0.000
+7500	images/sec: 1194.4 +/- 0.5 (jitter = 41.6)	0.000	0.000	0.000
+8000	images/sec: 1194.6 +/- 0.5 (jitter = 41.5)	0.000	0.000	0.000
+8500	images/sec: 1194.4 +/- 0.4 (jitter = 41.0)	0.000	0.000	0.000
+9000	images/sec: 1194.3 +/- 0.4 (jitter = 40.9)	0.000	0.000	0.000
+9500	images/sec: 1194.1 +/- 0.4 (jitter = 40.5)	0.000	0.000	0.000
+10000	images/sec: 1193.9 +/- 0.4 (jitter = 40.1)	0.000	0.000	0.000
+----------------------------------------------------------------
+total images/sec: 1191.81
+----------------------------------------------------------------
+mean power used: 155.433333 W
+final_metric: 0.000005

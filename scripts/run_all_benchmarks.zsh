@@ -4,6 +4,6 @@ model_list=("alexnet" "densenet" "googlenet" "inception" "vgg11" "vgg16" "vgg19"
 
 for model_name in $model_list; do
     python tf_cnn_benchmarks/tf_cnn_benchmarks.py --model=$model_name --trace_file=/home/sniper/tf_cnn_benchmarks/scripts/tf_cnn_benchmarks/$model_name
-    mv "/home/sniper/tf_cnn_benchmarks/trace_data.ctf" "/home/sniper/tf_cnn_benchmarks/trace_data_$modelname.ctf"
+    mv "/home/sniper/tf_cnn_benchmarks/trace_data.ctf" "/home/sniper/tf_cnn_benchmarks/trace_data_$model_name.ctf"
     mv "logfile.txt" "logfile_$model_name.txt"
 done

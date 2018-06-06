@@ -1,0 +1,45 @@
+TensorFlow:  1.8
+Model:       lenet5
+Dataset:     synthetic (synthetic)
+Mode:        forward-only
+SingleSess:  False
+Batch size:  20 global
+             20 per device
+Num batches: 10000
+Num epochs:  4.00
+Devices:     ['/gpu:0']
+Data format: NCHW
+Layout optimizer: False
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating model
+Number of parameters: 1607727
+Running warm up
+Dumping trace to /home/sniper/tf_cnn_benchmarks/scripts/tf_cnn_benchmarks/lenet
+Done warm up
+Step	Img/sec	total_loss	top_1_accuracy	top_5_accuracy
+1	images/sec: 20898.4 +/- 0.0 (jitter = 0.0)	0.000	0.000	0.000
+500	images/sec: 25856.5 +/- 66.4 (jitter = 1304.9)	0.000	0.000	0.000
+1000	images/sec: 25936.4 +/- 44.5 (jitter = 1331.8)	0.000	0.000	0.000
+1500	images/sec: 25939.5 +/- 35.5 (jitter = 1270.1)	0.000	0.000	0.000
+2000	images/sec: 25932.1 +/- 30.4 (jitter = 1267.0)	0.000	0.000	0.000
+2500	images/sec: 25959.7 +/- 27.4 (jitter = 1307.7)	0.000	0.000	0.050
+3000	images/sec: 26067.0 +/- 25.0 (jitter = 1291.6)	0.000	0.000	0.000
+3500	images/sec: 26134.8 +/- 22.8 (jitter = 1276.4)	0.000	0.000	0.050
+4000	images/sec: 26194.4 +/- 21.0 (jitter = 1230.5)	0.000	0.000	0.000
+4500	images/sec: 26204.4 +/- 19.6 (jitter = 1192.4)	0.000	0.000	0.000
+5000	images/sec: 26218.0 +/- 18.5 (jitter = 1204.7)	0.000	0.000	0.000
+5500	images/sec: 26257.9 +/- 17.5 (jitter = 1207.7)	0.000	0.000	0.000
+6000	images/sec: 26262.7 +/- 16.7 (jitter = 1207.7)	0.000	0.000	0.000
+6500	images/sec: 26258.6 +/- 16.0 (jitter = 1207.7)	0.000	0.000	0.000
+7000	images/sec: 26247.4 +/- 15.5 (jitter = 1204.7)	0.000	0.000	0.000
+7500	images/sec: 26248.2 +/- 15.0 (jitter = 1204.7)	0.000	0.000	0.000
+8000	images/sec: 26249.8 +/- 14.5 (jitter = 1195.3)	0.000	0.000	0.000
+8500	images/sec: 26246.7 +/- 14.0 (jitter = 1195.3)	0.000	0.000	0.000
+9000	images/sec: 26240.2 +/- 13.6 (jitter = 1218.2)	0.000	0.000	0.000
+9500	images/sec: 26242.9 +/- 13.2 (jitter = 1218.2)	0.000	0.000	0.000
+10000	images/sec: 26238.1 +/- 12.9 (jitter = 1218.2)	0.000	0.000	0.050
+----------------------------------------------------------------
+total images/sec: 26005.76
+----------------------------------------------------------------
